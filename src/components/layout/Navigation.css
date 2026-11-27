@@ -1,0 +1,122 @@
+.nav {
+    position: absolute;
+    z-index: 2;
+    top: 100%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    width: min(176px, calc(100vw - 32px));
+    max-height: calc(100dvh - var(--header-h));
+    padding: 22px 24px 26px;
+    overflow-y: auto;
+    background: var(--charcoal);
+    color: var(--offwhite);
+    font-size: 13px;
+    box-shadow: 0 14px 30px rgb(0 0 0 / 28%);
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-8px);
+    transition: opacity .22s ease, transform .22s ease, visibility .22s ease;
+}
+
+.nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+}
+
+.nav li {
+    display: block;
+}
+
+.nav a {
+    display: flex;
+    align-items: center;
+    min-height: 36px;
+    color: var(--offwhite);
+    transition: color .2s ease;
+}
+
+.nav a:active,
+.nav a:hover {
+    color: var(--lime);
+}
+
+.nav__spacer {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .nav {
+        width: 220px;
+        padding: 26px 28px 30px;
+        font-size: 14px;
+    }
+
+    .nav a {
+        min-height: 40px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .nav {
+        display: contents;
+        visibility: visible;
+        opacity: 1;
+        pointer-events: auto;
+        transform: none;
+        box-shadow: none;
+        max-height: none;
+        overflow: visible;
+        padding: 0;
+        background: transparent;
+        color: var(--offwhite);
+        font-size: 14px;
+        transition: none;
+    }
+
+    .nav ul {
+        position: absolute;
+        top: 50%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 32px;
+        transform: translateY(-50%);
+        white-space: nowrap;
+    }
+
+    .nav ul:first-child {
+        left: 21.85%;
+    }
+
+    .nav ul:last-child {
+        right: calc(var(--header-inset) + var(--lang-w) + var(--header-action-gap) + var(--header-cta-w) + var(--header-nav-gap));
+    }
+
+    .nav a {
+        min-height: 20px;
+        height: 20px;
+        color: var(--offwhite);
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .header:lang(uk) .nav ul,
+    .header:lang(ua) .nav ul {
+        gap: 24px;
+    }
+
+    .header:lang(uk) .nav ul:first-child,
+    .header:lang(ua) .nav ul:first-child {
+        left: 20.5%;
+    }
+
+    .nav__spacer {
+        display: none;
+    }
+}

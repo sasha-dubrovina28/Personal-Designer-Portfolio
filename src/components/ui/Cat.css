@@ -1,0 +1,187 @@
+.cat {
+  --cat-body: #1a1c19;
+  display: block;
+  height: auto;
+}
+
+
+.cat--head {
+  overflow: visible;
+}
+
+.header__cat {
+  display: block;
+  overflow: visible;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.header__cat .cat__pupil {
+  transform-box: fill-box;
+  transform-origin: center;
+  transform: translateY(var(--look, 3px));
+  transition: transform var(--cat-speed, .7s) ease-in-out;
+  pointer-events: none;
+}
+
+.header__cat .cat__brows {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: transform var(--cat-speed, .7s) ease-in-out;
+}
+
+.header__cat:hover .cat__pupil {
+  transform: translateY(0) scale(1.12);
+}
+
+.header__cat:hover .cat__brows {
+  transform: scaleX(1.2);
+}
+
+
+.cat-art {
+  position: relative;
+  width: 100%;
+  --look-y: -38%;
+}
+
+.cat-art img,
+.cat-art__eyes {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.cat-art img {
+  position: static;
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: fill;
+}
+
+.cat-art__eye {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  display: grid;
+  place-items: center;
+}
+
+.cat-art__eye::before {
+  content: "";
+  position: absolute;
+  inset: -35% -30%;
+  border-radius: 50%;
+  background: var(--eye-patch, #1b1d1a);
+}
+
+.cat-art__eye::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: var(--offwhite);
+}
+
+.cat-art__ball {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.cat-art__pupil {
+  position: relative;
+  width: 50%;
+  aspect-ratio: 1.4;
+  border-radius: 50%;
+  background: var(--lime);
+  transform: translateY(var(--look-y));
+  transition: transform var(--cat-speed, .7s) ease-in-out;
+  pointer-events: none;
+}
+
+.cat-art__pupil::after {
+  content: "";
+  position: absolute;
+  inset: 24% 17%;
+  border-radius: 50%;
+  background: var(--ink);
+}
+
+
+.cat-art:hover .cat-art__pupil {
+  transform: translateY(0) scale(1.12);
+}
+
+.cat-art__mouth {
+  position: absolute;
+  transform: translateX(-50%);
+  height: auto;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.cat-art__patch {
+  fill: var(--eye-patch, #1b1d1a);
+}
+
+.cat-art__smile {
+  transform-box: fill-box;
+  transform-origin: 50% 0;
+  transform: scaleX(1);
+  transition: transform var(--cat-speed, .7s) ease-in-out;
+}
+
+.cat-art:hover .cat-art__smile {
+  transform: scaleX(1.25);
+}
+
+:root {
+  --cat-speed: .7s;
+}
+
+.cat__pupil,
+.cat__brows,
+.cat-art__pupil,
+.cat-art__smile {
+  transition-duration: var(--cat-speed);
+  transition-timing-function: ease-in-out;
+}
+
+.cat-art__hide {
+  display: none;
+  position: absolute;
+  background: var(--cat-hide, var(--charcoal));
+}
+
+@media (hover: none) {
+  .header__cat:active .cat__pupil {
+    transform: translateY(0) scale(1.12);
+  }
+
+  .header__cat:active .cat__brows {
+    transform: scaleX(1.2);
+  }
+
+  .cat-art:active .cat-art__pupil {
+    transform: translateY(0) scale(1.12);
+  }
+
+  .cat-art:active .cat-art__smile {
+    transform: scaleX(1.25);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+
+  .cat__pupil,
+  .cat__brows,
+  .cat-art__pupil,
+  .cat-art__smile {
+    transition: none;
+  }
+}

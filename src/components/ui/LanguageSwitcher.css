@@ -1,0 +1,73 @@
+.lang {
+    position: relative;
+    display: inline-flex;
+    height: 44px;
+    border: 1px solid var(--lime);
+    background: var(--ink);
+    isolation: isolate;
+    overflow: hidden;
+}
+
+.lang::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    background: var(--lime);
+    transform: translateX(0);
+    transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.lang:has(.lang__btn:last-child.is-active)::before {
+    transform: translateX(100%);
+}
+
+
+
+.lang__btn {
+    position: relative;
+    z-index: 1;
+    flex: 1 1 0;
+    min-width: 40px;
+    padding: 0 8px;
+    border: 0;
+    background: transparent;
+    color: var(--offwhite);
+    font: inherit;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1;
+    cursor: pointer;
+    transition: color 0.25s ease;
+}
+
+.lang__btn.is-active {
+    background: transparent;
+    color: var(--ink);
+    cursor: default;
+}
+
+.lang__btn:not(.is-active):not(:disabled):hover {
+    color: var(--lime);
+}
+
+.lang__btn:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: -4px;
+}
+
+.lang__btn:disabled:not(.is-active) {
+    cursor: wait;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .lang::before,
+    .lang__btn {
+        transition: none;
+    }
+}

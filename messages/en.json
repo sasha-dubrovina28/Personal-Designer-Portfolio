@@ -1,0 +1,274 @@
+{
+  "Header": {
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "logoLabel": "Tetiana Yashchyshyna",
+    "create": "Let's create"
+  },
+  "Navigation": {
+    "about": "About me",
+    "services": "Services",
+    "works": "Works",
+    "process": "Process",
+    "faq": "FAQ",
+    "brief": "Brief",
+    "label": "Main navigation",
+    "mobileLabel": "Mobile navigation"
+  },
+  "Hero": {
+    "tagline": "Strategy / Web design / Digital experiences",
+    "status": "Independent designer · Open for projects",
+    "headline": "Make your",
+    "headlineSecond": "business",
+    "accent": "Stand out",
+    "description": "I turn your ideas into thoughtful websites and digital experiences that help your brand grow.",
+    "create": "Let's create",
+    "portfolio": "View portfolio"
+  },
+  "Footer": {
+    "copyright": "© 2026 — DESIGNED WITH CURIOSITY."
+  },
+  "About": {
+    "sectionLabel": "01 / A little about me",
+    "chips": {
+      "brand": "Brand identity",
+      "visual": "Visual exploration",
+      "detail": "Attention to detail"
+    },
+    "cardTitle": "Every detail has its place",
+    "cardSubtitle": "A clear idea, beautifully made.",
+    "showPhoto": "Show photo",
+    "title": "Hi, I'm Tetiana",
+    "subtitle": "Your design partner",
+    "paragraph1": "I'm an independent digital designer working at the intersection of strategy, identity, and the web. I help businesses turn their ideas into clear, functional, and visually distinctive digital experiences.",
+    "paragraph2": "My approach is simple: listen closely, explore different visual styles, pay attention to details, and make every design decision count.",
+    "paragraph3": "You work directly with me — from the first conversation to the final design handover.",
+    "focus": "My focus: Websites & digital products"
+  },
+  "Services": {
+    "sectionLabel": "02 / Services",
+    "title": "Big ideas.",
+    "titleSecond": "The right kind of design",
+    "description": "From a first impression to a complete experience. Clear scope, close collaboration, considered results.",
+    "note": "Starting packages for this sample portfolio. Final scope and prices are agreed before we begin.",
+    "cta": "Let's create",
+    "items": [
+      {
+        "id": "01",
+        "title": "Launch your website",
+        "description": "A focused landing page that turns interest into action.",
+        "packageName": "Landing page package",
+        "features": [
+          "Strategy & wireframes",
+          "Desktop + mobile design",
+          "Developer-ready handover"
+        ],
+        "price": "From $500",
+        "timeline": "Typical timeline · 2-3 weeks"
+      },
+      {
+        "id": "02",
+        "title": "Build your digital home",
+        "description": "A cohesive website that gives your brand room to grow.",
+        "packageName": "Multi-page website package",
+        "features": [
+          "Up to 5 key pages",
+          "Responsive design system",
+          "Interactive design prototype"
+        ],
+        "price": "From $3,500",
+        "timeline": "Typical timeline · 1-2 months"
+      },
+      {
+        "id": "03",
+        "title": "Make good, better",
+        "description": "A purposeful redesign that removes friction and brings clarity.",
+        "packageName": "Website redesign package",
+        "features": [
+          "Experience & content audit",
+          "Key journey improvements",
+          "Before / after design rationale"
+        ],
+        "price": "From $2,500",
+        "timeline": "Typical timeline · 3-5 weeks"
+      }
+    ]
+  },
+  "Process": {
+    "sectionLabel": "05 / The process",
+    "title": "The way we create",
+    "steps": [
+      {
+        "n": "01",
+        "title": "Discover",
+        "text": "Every great project starts with a conversation. We discuss your business, goals, audience, ideas, and expectations to understand what your website really needs."
+      },
+      {
+        "n": "02",
+        "title": "Define",
+        "text": "I explore references, analyze competitors, and define the website's structure and key user flows. This gives us a clear direction before moving into visual design."
+      },
+      {
+        "n": "03",
+        "title": "Wireframe",
+        "text": "I turn the approved structure into wireframes, arranging content and defining how users will navigate through the website."
+      },
+      {
+        "n": "04",
+        "title": "Design",
+        "text": "This is where the ideas come to life. I develop the visual style, work with typography, colors, imagery, and details to create a cohesive design that reflects your brand."
+      },
+      {
+        "n": "05",
+        "title": "Finalize",
+        "text": "We review the design, make the agreed adjustments, and prepare the final Figma files for development. Your design is ready for the next step."
+      }
+    ]
+  },
+  "FAQ": {
+    "sectionLabel": "06 / FAQ",
+    "title": "Got questions?",
+    "subtitle": "Let's clear things up",
+    "items": [
+      {
+        "id": "01",
+        "question": "How much does a project cost?",
+        "answer": "Landing pages start from $500, multi-page websites from $3,500. Final scope and price are agreed before we begin."
+      },
+      {
+        "id": "02",
+        "question": "How long does it take?",
+        "answer": "A landing page usually takes 2-3 weeks, a full website 1-2 months."
+      },
+      {
+        "id": "03",
+        "question": "How many revisions are included?",
+        "answer": "Two rounds of revisions are included in every package."
+      },
+      {
+        "id": "04",
+        "question": "Do you also develop the website?",
+        "answer": "I focus on design and prepare developer-ready Figma files for handover."
+      },
+      {
+        "id": "05",
+        "question": "How will we communicate?",
+        "answer": "Via email, Telegram or video calls — whatever is most comfortable for you."
+      }
+    ]
+  },
+
+"Portfolio": {
+  "sectionLabel": "03 / Selected work",
+  "caption": "No boxes. Just ideas",
+  "title": "Design in",
+  "titleSecond": "different forms",
+  "lead": "Different industries, different audiences, different challenges — one thoughtful approach to digital design.",
+  "caseLabel": "04 / Before & after",
+  "caseTitle": "Same business. A clearer story",
+  "caseLead": "A redesign is more than a new look. It helps people understand what matters — and what to do next.",
+  "beforeTag": "Before / Busy & unfocused",
+  "afterTag": "After / Clean & considered",
+  "worksAlt": [
+    "Africa — travel landing page",
+    "Game promotion — landing page",
+    "Landing page with illustration",
+    "Service page with a form",
+    "Landing page with a form",
+    "Mobile app screen",
+    "Mobile app screen",
+    "Mobile app screen"
+  ],
+  "mobileWorksAlt": {
+  "5": ["Mobile app screen"],
+  "6": ["Mobile app screen"],
+  "7": [
+    "Mobile app screen",
+    "Mobile app screen"
+  ]
+},
+  "case": {
+    "title": "More than just a sports bar",
+    "text": "A fresh digital look for YOURS Sports Bar. The redesign brings the energy of live sports, great company and unforgettable game nights into a bold, modern web experience.",
+    "beforeAlt": [
+      "Before redesign — menu page",
+      "Before redesign — events page"
+    ],
+    "afterAlt": [
+      "After redesign — home page",
+      "After redesign — Eat Hard. Cheer Harder.",
+      "After redesign — events calendar",
+      "After redesign — Max Power Specials",
+      "After redesign — premium drinks",
+      "After redesign — location and opening hours"
+    ],
+    "points": [
+      {
+        "n": "01",
+        "title": "A sharper message",
+        "text": "One clear promise replaces generic introductions."
+      },
+      {
+        "n": "02",
+        "title": "A better hierarchy",
+        "text": "The eye moves from the video to the next action."
+      },
+      {
+        "n": "03",
+        "title": "A focused next step",
+        "text": "One primary CTA makes the journey easier."
+      }
+    ],
+    "note": "Illustrative redesign study — strategy and design rationale, not measured performance results."
+  }
+},
+
+"Contact": {
+  "sectionLabel": "07 / Brief",
+  "title": "Let's make something happen",
+  "description": "Tell me a little about your idea. I'll get back to you to discuss your project, explore possibilities, and figure out the next steps.",
+  "formTitle": "Let's start with the basics",
+  "fields": {
+    "name": "Your name",
+    "email": "Email address",
+    "need": "What do you need?",
+    "budget": "Approximate budget",
+    "message": "A little about your project"
+  },
+  "placeholders": {
+    "name": "Alex Taylor",
+    "email": "you@company.com",
+    "need": "Website redesign / Landing page / Other",
+    "budget": "$2,500",
+    "message": "Your goals, timeline and a link to your current site..."
+  },
+  "hints": {
+    "name": "Tell me what I should call you.",
+    "email": "Use an email address I can reply to.",
+    "need": "Tell me what kind of design project you need.",
+    "budget": "A rough estimate is fine. This field is optional.",
+    "message": "Share your goals, timing and current site."
+  },
+  "errors": {
+    "nameRequired": "Please enter your name.",
+    "emailRequired": "Please enter your email address.",
+    "emailInvalid": "Enter a valid email address, e.g. alex@company.com.",
+    "messageRequired": "Add a short description of your project."
+  },
+  "submit": "Send inquiry",
+  "sending": "Sending...",
+  "successButton": "Thank you!",
+  "successMessage": "Your inquiry has been sent successfully!",
+  "serverError": "Something went wrong. Please try again.",
+  "serverErrorFallback": "Failed to send inquiry.",
+  "formNote": "Required fields use *. Hints appear on focus; errors appear after leaving an invalid field or trying to send. Keep entered values while correcting errors."
+},
+"mobileWorksAlt": {
+  "5": ["Mobile app screen"],
+  "6": ["Mobile app screen"],
+  "7": ["Mobile app screen", "Mobile app screen"]
+}
+
+}
+
+

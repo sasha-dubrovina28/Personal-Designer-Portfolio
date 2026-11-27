@@ -1,0 +1,123 @@
+.slideshow-wrap {
+  width: 100%;
+}
+
+.slideshow {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  width: 100%;
+  background: var(--charcoal);
+  transition: box-shadow .3s ease;
+}
+
+.slideshow__swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.slideshow__group {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.slideshow__group.is-pair {
+  gap: 12px;
+}
+
+.slideshow__item {
+  position: relative;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  background: var(--charcoal);
+}
+
+.slideshow__slide {
+  object-fit: cover;
+  transition: transform .45s ease, filter .45s ease;
+}
+
+.slideshow__slide.is-contain {
+  object-fit: contain;
+  padding: 8px;
+}
+.slideshow__group.is-pair .slideshow__slide.is-contain {
+  padding: 12px 0;
+}
+
+.slideshow__group.is-pair .slideshow__item:first-child img {
+  object-position: right center;
+}
+
+.slideshow__group.is-pair .slideshow__item:last-child img {
+  object-position: left center;
+}
+
+.slideshow__group.is-pair .slideshow__item:not(:first-child):not(:last-child) img {
+  object-position: center;
+}
+.slideshow__arrows {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 24px;
+}
+
+.slideshow__arrow {
+  display: grid;
+  place-items: center;
+  padding: 8px;
+  border: 0;
+  background: none;
+  color: var(--lime);
+  cursor: pointer;
+  transition: color .2s ease, transform .2s ease;
+}
+
+.slideshow__arrow svg {
+  width: 36px;
+  height: 40px;
+  filter: drop-shadow(5px 6px 4px rgb(0 0 0 / 40%));
+}
+
+.slideshow__arrow:hover {
+  color: var(--leaf);
+  transform: scale(1.06);
+}
+
+.slideshow__arrow:active {
+  transform: scale(.96);
+}
+
+.slideshow__arrow:focus-visible {
+  outline: 2px solid var(--lime);
+  outline-offset: 2px;
+}
+
+@media (min-width: 768px) {
+  .slideshow__arrows {
+    gap: 48px;
+    margin-top: 32px;
+  }
+
+  .slideshow__arrow svg {
+    width: 50px;
+    height: 56px;
+  }
+}
+@media (hover: hover) and (pointer: fine) {
+  .slideshow:hover {
+    box-shadow:
+      0 0 0 2px var(--lime),
+      0 0 26px rgb(219 255 53 / 22%);
+  }
+
+  .slideshow:hover .slideshow__slide {
+    transform: scale(1.012);
+    filter: brightness(1.07) saturate(1.06);
+  }
+}
